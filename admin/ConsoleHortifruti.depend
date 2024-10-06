@@ -1,0 +1,152 @@
+# depslib dependency file v1.0
+1320179460 source:c:\projetos\consolehortifruti\consolehortifruti\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<winbase.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1728163954 source:c:\projetos\consolehortifruti\consolehortifruti\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sqlite3.h"
+
+1320179460 c:\projetos\consolehortifruti\consolehortifruti\sqlite3.h
+	<stdarg.h>
+
+1728163881 source:c:\projetos\consolehortifruti\consolehortifruti\testedb.c
+	<stdio.h>
+	<stdlib.h>
+	"sqlite3.h"
+
+1728164395 source:c:\projetos\consolehortifruti\consolehortifruti\src\menu.c
+
+1320179460 source:c:\projetos\consolehortifruti\consolehortifruti\src\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<winbase.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1728172027 source:c:\projetos\consolehortifruti\consolehortifruti\src\main.c
+	<stdio.h>
+	<stdlib.h>
+	<curses.h>
+	<string.h>
+	"../headers/verify_session.h"
+
+1320179460 c:\projetos\consolehortifruti\consolehortifruti\include\sqlite3.h
+	<stdarg.h>
+
+1728170690 source:c:\projetos\consolehortifruti\consolehortifruti\tests\testdb.c
+	<stdio.h>
+	<stdlib.h>
+	"../headers/sqlite3.h"
+
+1320179460 c:\projetos\consolehortifruti\consolehortifruti\src\sqlite3.h
+	<stdarg.h>
+
+1728164395 source:c:\projetos\consolehortifruti\consolehortifruti\include\menu.c
+
+1320179460 c:\projetos\consolehortifruti\consolehortifruti\headers\sqlite3.h
+	<stdarg.h>
+
+1567627682 c:\projetos\consolehortifruti\consolehortifruti\pdcurses-3.9\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+	<stdbool.h>
+
+1728170578 source:c:\projetos\consolehortifruti\consolehortifruti\src\login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../headers/login.h"
+	"../headers/sqlite3.h"
+
+1728170581 c:\projetos\consolehortifruti\consolehortifruti\headers\login.h
+
+1728173789 source:c:\projetos\consolehortifruti\consolehortifruti\src\verify_session.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../headers/verify_session.h"
+	"../headers/sqlite3.h"
+
+1728170827 c:\projetos\consolehortifruti\consolehortifruti\headers\verify_session.h
+
