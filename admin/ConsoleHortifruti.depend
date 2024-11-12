@@ -150,3 +150,215 @@
 
 1728170827 c:\projetos\consolehortifruti\consolehortifruti\headers\verify_session.h
 
+1728164395 source:c:\projetos\consolehortifruti\admin\include\menu.c
+
+1320179460 source:c:\projetos\consolehortifruti\admin\src\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<winbase.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1729479022 source:c:\projetos\consolehortifruti\admin\tests\testdb.c
+
+1320179460 c:\projetos\consolehortifruti\admin\headers\sqlite3.h
+	<stdarg.h>
+
+1731201055 source:c:\projetos\consolehortifruti\admin\src\verify_session.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../headers/verify_session.h"
+	"../headers/sqlite3.h"
+
+1730570570 c:\projetos\consolehortifruti\admin\headers\verify_session.h
+
+1731381043 source:c:\projetos\consolehortifruti\admin\src\main.c
+	<stdio.h>
+	<stdlib.h>
+	<curses.h>
+	<string.h>
+	"../headers/verify_session.h"
+	"../headers/administrator/administrator_display.h"
+	"../headers/common_user/common_user_display.h"
+	<locale.h>
+	"../headers/sqlite3.h"
+
+1567627682 c:\projetos\consolehortifruti\admin\pdcurses-3.9\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+	<stdbool.h>
+
+1729459648 source:c:\projetos\consolehortifruti\admin\src\displays\supplier\supplier_display.c
+	<curses.h>
+	"../../../headers/administrator/administrator_display.h"
+
+1729459627 source:c:\projetos\consolehortifruti\admin\src\displays\categories\categories_display.c
+	<curses.h>
+	"../../../headers/administrator/administrator_display.h"
+
+1729997749 source:c:\projetos\consolehortifruti\admin\src\displays\product\product_display.c
+	<curses.h>
+	"../../../headers/administrator/administrator_display.h"
+	"../../../headers/product/fetch_product.h"
+
+1729459112 c:\projetos\consolehortifruti\admin\headers\product\product_display.h
+
+1729459118 c:\projetos\consolehortifruti\admin\headers\supplier\supplier_display.h
+
+1729459107 c:\projetos\consolehortifruti\admin\headers\categories\categories_display.h
+
+1729480585 source:c:\projetos\consolehortifruti\admin\src\displays\administrator\administrator_display.c
+	<curses.h>
+	"../../../headers/product/product_display.h"
+	"../../../headers/supplier/supplier_display.h"
+	"../../../headers/categories/categories_display.h"
+	<curses.h>
+	<string.h>
+
+1729459497 c:\projetos\consolehortifruti\admin\headers\administrator\administrator_display.h
+
+1729998813 source:c:\projetos\consolehortifruti\admin\src\displays\product\fetch_product.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../../headers/sqlite3.h"
+	<curses.h>
+	"../../../headers/product/product_display.h"
+
+1729998873 c:\projetos\consolehortifruti\admin\headers\product\fetch_product.h
+
+1731202402 source:c:\projetos\consolehortifruti\admin\src\administrator\administrator_display.c
+	<curses.h>
+	"../../headers/product/product_display.h"
+	"../../headers/supplier/supplier_display.h"
+	"../../headers/categories/categories_display.h"
+	"../../headers/more_information/more_information_display.h"
+	<curses.h>
+	<string.h>
+
+1730569071 source:c:\projetos\consolehortifruti\admin\src\categories\categories_display.c
+	<curses.h>
+	"../../headers/administrator/administrator_display.h"
+
+1731381821 source:c:\projetos\consolehortifruti\admin\src\product\product_display.c
+	<curses.h>
+	"../../headers/administrator/administrator_display.h"
+	"../../headers/product/fetch_product.h"
+	"../../headers/product/create_product.h"
+	"../../headers/product/delete_product.h"
+	"../../headers/product/update_product.h"
+
+1730569090 source:c:\projetos\consolehortifruti\admin\src\supplier\supplier_display.c
+	<curses.h>
+	"../../headers/administrator/administrator_display.h"
+
+1731381700 source:c:\projetos\consolehortifruti\admin\src\product\fetch_product.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../headers/sqlite3.h"
+	<curses.h>
+	"../../headers/product/product_display.h"
+	"../../headers/product/product_display_common_user.h"
+
+1730570745 source:c:\projetos\consolehortifruti\admin\src\login.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../headers/verify_session.h"
+	"../headers/sqlite3.h"
+
+1730570616 c:\projetos\consolehortifruti\admin\headers\login.h
+
+1731376319 source:c:\projetos\consolehortifruti\admin\src\product\create_product.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../headers/sqlite3.h"
+	<curses.h>
+	"../../headers/product/product_display.h"
+
+1730572330 c:\projetos\consolehortifruti\admin\headers\product\create_product.h
+
+1730651466 c:\projetos\consolehortifruti\admin\headers\product\delete_product.h
+
+1731198208 source:c:\projetos\consolehortifruti\admin\src\product\delete_product.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../headers/sqlite3.h"
+	<curses.h>
+	"../../headers/product/product_display.h"
+
+1731202328 source:c:\projetos\consolehortifruti\admin\src\more_infomation\more_information_display.c
+	<curses.h>
+	<string.h>
+	"../../headers/administrator/administrator_display.h"
+
+1731200795 c:\projetos\consolehortifruti\admin\headers\more_information\more_information_display.h
+
+1731380069 c:\projetos\consolehortifruti\admin\headers\product\update_product.h
+
+1731380233 source:c:\projetos\consolehortifruti\admin\src\product\update_product.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../headers/sqlite3.h"
+	<curses.h>
+	"../../headers/product/product_display.h"
+
+1731381078 source:c:\projetos\consolehortifruti\admin\src\common_user\common_user_display.c
+	<curses.h>
+	"../../headers/product/product_display_common_user.h"
+	<curses.h>
+	<string.h>
+
+1731380920 c:\projetos\consolehortifruti\admin\headers\product\product_display_common_user.h
+
+1731380999 c:\projetos\consolehortifruti\admin\headers\common_user\common_user_display.h
+
+1731381635 source:c:\projetos\consolehortifruti\admin\src\product\product_display_common_user.c
+	<curses.h>
+	"../../headers/product/fetch_product.h"
+	"../../headers/common_user/common_user_display.h"
+
