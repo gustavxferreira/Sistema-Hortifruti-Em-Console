@@ -18,13 +18,27 @@ int userCallback(void *data, int argc, char **argv, char **azColName) {
     return 0;
 }
 
+enum sessionStatus {
+    LOGGED_IN = 1,
+    NOT_LOGGED_IN = 0
+};
+
+enum UserType {
+    ADMIN_USER = 1,
+    COMMON_USER = 2
+};
+
 int login() {
 
     char typed_username[50];
     char typed_password[50];
 
+   int* permissionAndSession = (int*) malloc(2 * sizeof(int));
+    permissionAndSession[0] = NOT_LOGGED_IN;
+    permissionAndSession[1] = COMMON_USER;
+
     clear();
-    printw("Insira seu usuário: ");
+    printw("Insira seu usuario: ");
     getnstr(typed_username, sizeof(typed_username) - 1);
 
     printw("\nInsira sua senha: ");
@@ -41,7 +55,7 @@ int login() {
     }
 
     char sql[200];
-snprintf(sql, sizeof(sql), "SELECT username, password, isAdmin FROM users WHERE username = '%s' AND password = '%s';",
+    snprintf(sql, sizeof(sql), "SELECT username, password, isAdmin FROM users WHERE username = '%s' AND password = '%s';",
          typed_username, typed_password);
     char *zErrMsg = 0;
     UserData user = {"", "", 0};
@@ -56,16 +70,22 @@ snprintf(sql, sizeof(sql), "SELECT username, password, isAdmin FROM users WHERE 
         return 0;
     }
 
-     if (strcmp(typed_username, user.username) != 0 || strcmp(typed_password, user.password) != 0 || user.isAdmin == 0) {
+     if (strcmp(typed_username, user.username) != 0 || strcmp(typed_password, user.password) != 0) {
         printw("\nAcesso negado\n");
         sqlite3_free(zErrMsg);
         sqlite3_close(db);
         refresh();
-        return 0;
+        return permissionAndSession;
+    }
+
+    permissionAndSession[0] = LOGGED_IN;
+
+    if(user.isAdmin == 1) {
+        permissionAndSession[1] = ADMIN_USER;
     }
 
     sqlite3_close(db);
-    printw("\nBem vindo!\n");
+    printw("\nBem vindo %s!\n", typed_username);
     refresh();
-    return 1;
+    return permissionAndSession;
 }
