@@ -3,43 +3,43 @@
 #include <curses.h>
 #include <string.h>
 #include "../headers/verify_session.h"
+#include "../headers/administrator/administrator_display.h"
+#include "../headers/common_user/common_user_display.h"
+#include <locale.h>
+#include "../headers/sqlite3.h"
 
-void administrator_display() {
-    start_color();
-    init_pair(1, COLOR_CYAN, COLOR_BLACK);
-    init_pair(2, COLOR_YELLOW, COLOR_BLACK);
+enum sessionStatus {
+    LOGGED_IN = 1,
+    NOT_LOGGED_IN = 0
+};
 
-    clear();
-    attron(COLOR_PAIR(1) | A_BOLD);
-    mvprintw(1, 1, "Bem-vindo ao Sistema de Hortifruti Usuario - Var");
-    mvprintw(2, 1, "");
-    mvprintw(3, 1, "Por favor, escolha uma opcao:");
-
-    mvprintw(4, 1, "1. Produtos");
-    mvprintw(5, 1, "2. Fornecedores");
-    mvprintw(6, 1, "3. Categorias");
-    mvprintw(7, 1, "4. Sair");
-    attroff(COLOR_PAIR(1) | A_BOLD);
-    refresh();
-    getch();
-}
+enum UserType {
+    ADMIN_USER = 1,
+    COMMON_USER = 2
+};
 
 int main() {
+
     initscr();
+    cbreak();
+    curs_set(0);
 
-    // se for 0 o usuario ainda não está logado
-    int verify_session = 0;
+    int* permissionAndSession = NULL;
 
-     while (verify_session == 0) {
-        verify_session = login();
+        while (permissionAndSession == NULL || permissionAndSession[0] == NOT_LOGGED_IN) {
+        permissionAndSession = login();
+
         printw("Carregando...");
+
         refresh();
         napms(1000);
     }
 
-    napms(1000);
+    switch(permissionAndSession[1]) {
+    case ADMIN_USER: administrator_display();  break;
+    case COMMON_USER: common_user_display(); break;
+    }
 
-    administrator_display();
 
     endwin();
     return 0;
