@@ -148,13 +148,6 @@ int create_product() {
     attroff(COLOR_PAIR(2) | A_BOLD);
     userChoose = getch();
 
-        switch(userChoose) {
-        case 'Y':
-        case 'y':
-              break;
-        default: clear(); printw("ACAO CANCELADA!"); refresh(); napms(750); product_display(); break;
-        }
-
     char sql[256];
     sprintf(sql,
     "INSERT INTO product (product_name, price, quantity, category_id, unit_type) VALUES ('%s', %.2f, %d, %d, '%s')",
@@ -164,6 +157,9 @@ int create_product() {
     char *zErrMsg = 0;
 
     int rc = sqlite3_open("db.db3", &db);
+
+    if(userChoose == 'y' || userChoose == 'Y'){
+
 
     if (rc != SQLITE_OK) {
         printw("ERRO ao abrir o banco de dados\n");
@@ -185,6 +181,9 @@ int create_product() {
     attron(COLOR_PAIR(1) | A_BOLD);
     printw("\n Produto inserido com sucesso!");
     attroff(COLOR_PAIR(1) | A_BOLD);
+    } else {
+        clear(); printw("ACAO CANCELADA!"); refresh();;
+    }
 
     printw("\n Redirecionando...");
     refresh();

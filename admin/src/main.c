@@ -40,7 +40,6 @@ int main() {
     case COMMON_USER: common_user_display(); break;
     }
 
-
     endwin();
     return 0;
 }
