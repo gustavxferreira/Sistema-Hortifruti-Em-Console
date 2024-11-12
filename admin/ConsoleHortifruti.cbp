@@ -38,11 +38,14 @@
 		</Linker>
 		<Unit filename="headers/administrator/administrator_display.h" />
 		<Unit filename="headers/categories/categories_display.h" />
+		<Unit filename="headers/common_user/common_user_display.h" />
 		<Unit filename="headers/more_information/more_information_display.h" />
 		<Unit filename="headers/product/create_product.h" />
 		<Unit filename="headers/product/delete_product.h" />
 		<Unit filename="headers/product/fetch_product.h" />
 		<Unit filename="headers/product/product_display.h" />
+		<Unit filename="headers/product/product_display_common_user.h" />
+		<Unit filename="headers/product/update_product.h" />
 		<Unit filename="headers/sqlite3.h" />
 		<Unit filename="headers/supplier/supplier_display.h" />
 		<Unit filename="headers/verify_session.h" />
@@ -55,11 +58,14 @@
 		<Unit filename="src/categories/categories_display.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src/common_user/common_user_display.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src/db.db3" />
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="src/more_infomation/more_information_display.c">
+		<Unit filename="src/more_information/more_information_display.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/product/create_product.c">
@@ -72,6 +78,12 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/product/product_display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/product/product_display_common_user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/product/update_product.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/sqlite3.c">
