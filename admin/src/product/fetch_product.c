@@ -73,7 +73,9 @@ int fetch_product(int adm) {
     sqlite3_close(db);
     if(adm == 0) {
         product_display_common_user();
+    }else {
+      product_display();
     }
-    product_display();
+
 
 }
