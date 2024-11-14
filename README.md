@@ -27,3 +27,13 @@ Fazer a options de build pelo code blocks, ajustando os caminhos dos seguintes a
 - **wincon/pdcurses.a** Adicionar linker settings
 - **PDCurses-3.9/curses.h** Adicionar search directories
 
+## Usuários Bases Para Testes
+
+Usuário Comum
+- **login: user**
+- **senha: user**
+
+  
+Usuário Administrador
+- **login: admin**
+- **senha: admin**
