@@ -388,7 +388,7 @@
 
 1731415605 c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\headers\more_information\more_information_display.h
 
-1731415605 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\categories\categories_display.c
+1731595521 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\categories\categories_display.c
 	<curses.h>
 	"../../headers/administrator/administrator_display.h"
 
@@ -402,7 +402,7 @@
 
 1731415605 c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\headers\product\product_display_common_user.h
 
-1731415605 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\main.c
+1731417031 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\main.c
 	<stdio.h>
 	<stdlib.h>
 	<curses.h>
@@ -433,7 +433,7 @@
 	<curses.h>
 	"../../headers/product/product_display.h"
 
-1731415605 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\product\delete_product.c
+1731417151 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\product\delete_product.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -450,7 +450,7 @@
 	"../../headers/product/product_display.h"
 	"../../headers/product/product_display_common_user.h"
 
-1731415605 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\product\product_display.c
+1731591085 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\product\product_display.c
 	<curses.h>
 	"../../headers/administrator/administrator_display.h"
 	"../../headers/product/fetch_product.h"
@@ -523,7 +523,7 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1731415605 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\supplier\supplier_display.c
+1731594608 source:c:\users\gabriel.melo\documents\pim\sistema-hortifruti-em-console\admin\src\supplier\supplier_display.c
 	<curses.h>
 	"../../headers/administrator/administrator_display.h"
 

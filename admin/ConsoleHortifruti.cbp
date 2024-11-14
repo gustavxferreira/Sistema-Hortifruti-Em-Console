@@ -7,13 +7,18 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/ConsoleHortifruti" prefix_auto="1" extension_auto="1" />
+				<Option output="ConsoleHortifruti" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="PDCurses-3.9/pdcurses" />
 				</Compiler>
+				<Linker>
+					<Add library="sqlite3.lib" />
+					<Add library="wincon/pdcurses.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ConsoleHortifruti" prefix_auto="1" extension_auto="1" />
@@ -30,12 +35,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="C:/Projetos/ConsoleHortifruti/admin/PDCurses-3.9" />
 		</Compiler>
-		<Linker>
-			<Add library="C:/Projetos/ConsoleHortifruti/admin/wincon/pdcurses.a" />
-			<Add library="C:/Projetos/ConsoleHortifruti/admin/sqlite3.lib" />
-		</Linker>
 		<Unit filename="headers/administrator/administrator_display.h" />
 		<Unit filename="headers/categories/categories_display.h" />
 		<Unit filename="headers/common_user/common_user_display.h" />
@@ -94,9 +94,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/verify_session.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="tests/testdb.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
