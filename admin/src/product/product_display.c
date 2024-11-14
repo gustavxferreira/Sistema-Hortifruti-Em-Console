@@ -16,7 +16,7 @@ void product_display() {
     mvprintw(1, 1, "|     PRODUTOS    |");
     mvprintw(2, 1, "+-----------------+");
     mvprintw(3, 1, "1. Listar Produtos");
-    mvprintw(4, 1, "2. Criar Produtos");
+    mvprintw(4, 1, "2. Cadastrar Produtos");
     mvprintw(5, 1, "3. Atualizar Produtos");
     mvprintw(6, 1, "4. Excluir Produtos");
     mvprintw(7, 1, "5. Voltar");
