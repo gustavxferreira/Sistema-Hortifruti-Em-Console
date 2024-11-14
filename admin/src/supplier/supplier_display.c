@@ -6,28 +6,31 @@ void supplier_display() {
     init_pair(2, COLOR_YELLOW, COLOR_BLACK);
 
     clear();
-
-    mvprintw(4, 1, "1. Listar Fornecedores");
-    mvprintw(5, 1, "2. Criar Fornecedores");
-    mvprintw(6, 1, "3. Atualizar Fornecedores");
-    mvprintw(7, 1, "3. Excluir Fornecedores");
-    mvprintw(8, 1, "4. Voltar");
-    attroff(COLOR_PAIR(1) | A_BOLD);
+    printw("EM MANUTENCAO");
     refresh();
-    char option = getch();
+    napms(500);
+    administrator_display();
+    //mvprintw(4, 1, "1. Listar Fornecedores");
+    //mvprintw(5, 1, "2. Criar Fornecedores");
+    //mvprintw(6, 1, "3. Atualizar Fornecedores");
+    //mvprintw(7, 1, "3. Excluir Fornecedores");
+    //mvprintw(8, 1, "4. Voltar");
+    //attroff(COLOR_PAIR(1) | A_BOLD);
+    //refresh();
+    //char option = getch();
 
-    switch(option) {
-    case '1':
-        product_display();
-        break;
-    case '2':
-        supplier_display();
-        break;
-        case '3':
-            categories_display();
-        break;
-    case '4':
-        administrator_display();
-        break;
-    }
+    //switch(option) {
+    //case '1':
+        //product_display();
+        //break;
+    //case '2':
+        //supplier_display();
+        //break;
+        //case '3':
+            //categories_display();
+        //break;
+    //case '4':
+        //administrator_display();
+        //break;
+    //}
 }
